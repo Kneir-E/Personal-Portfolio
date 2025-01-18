@@ -1,11 +1,12 @@
 import './App.css'
-import Card from './Card.tsx'
+import Skills_Panel from './skills/Skills_Panel';
+
 
 function App() {
 
   return (
     <>
-      <Card source='./assets/img.jpg' title='image_name' description='image_description'/>
+      <Skills_Panel></Skills_Panel>
     </>
   );
 }
