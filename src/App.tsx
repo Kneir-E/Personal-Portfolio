@@ -7,6 +7,7 @@ function App() {
   return (
     <>
       <Skills_Panel></Skills_Panel>
+      
     </>
   );
 }

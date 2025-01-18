@@ -1,8 +1,12 @@
 
 .Card{
-    background-color: hsl(20, 15.00%, 7.80%);
+    background-color: hsl(15, 3%, 25%);
     color: hsl(20, 5.70%, 89.60%);
-    width: 250px;
+    width: 200px;
+    border: hsl(58, 88%, 45%);
+    border-style: solid;
+    border-radius: 5%;
+    padding: .5em;
 }
 
 .inactive:hover{
@@ -12,4 +16,9 @@
 .active{
     background-color: hsl(9, 89.30%, 43.90%);
     width: 400px;
+}
+
+.Card > img{
+    width: calc(100% - 0.4em);
+    padding: .2em;
 }

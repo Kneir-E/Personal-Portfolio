@@ -13,10 +13,12 @@ function Skills_Panel(){
         <div style={{display: 'flex', gap: '10px', padding: '20px'}}>
             {[1,2,3].map((id) => (
                 <Card
-                    source = {""}
-                    title = {""}
-                    description = ""
+                    // source = {""}
+                    // title = {""}
+                    // description = ""
+                    // longDesc=""
                     id = {id}
+                    key = {id}
                     isActive={activeCardId === id}
                     onClick = {handleChangeActive}
                 />
