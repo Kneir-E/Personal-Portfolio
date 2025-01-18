@@ -1,0 +1,69 @@
+.SkillsPanel{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.SkillsPanel > h2{
+    background: linear-gradient(hsl,);
+    margin: 0rem 2rem 0rem 2rem;
+    color: wheat;
+    font-size: xx-large;
+}
+
+.SkillsPanel > p{
+    background: linear-gradient(hsl,);
+    margin: 0rem 2rem 0rem 2rem;
+    color: wheat;
+    font-size: large;
+}
+
+.SkillsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    overflow-x: auto;
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.Card{
+    background-color: hsl(15, 3%, 25%);
+    color: hsl(20, 5.70%, 89.60%);
+    min-width: 15rem;
+    height: 20rem;
+    border: hsl(60, 1%, 19%);
+    border-style: solid;
+    border-radius: 5%;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 500ms;
+}
+
+.inactive:hover{
+    transform: translate(0px, -2rem);
+    background-color: hsl(12, 3%, 34%);
+    display: block;
+}
+
+.active{
+    background-color: hsl(231, 60%, 34%);
+    min-width: 40rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.inactive > img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.active > img{
+    height: 100%;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 5%
+}
+
+.Card > .DescContainer{
+    margin: 2rem 1rem .5rem 1rem;
+}
