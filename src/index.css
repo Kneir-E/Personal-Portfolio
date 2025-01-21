@@ -1,6 +1,6 @@
 html{
     background-color: hsl(240, 11%, 12%);
-    width: 100vw;
+    width: calc(100vw-8px);
   
 }
 

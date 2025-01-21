@@ -1,53 +1,68 @@
 import { useState } from "react";
 import "./ProjectsPanel.css";
+import ImageSlider from "./ImageSlider";
+import ProjectCard from "./ProjectCard";
+("./ImageSlider");
 
-interface Props {
+interface Project {
   title: string;
   description: string;
-  source: string;
-  id: string;
-  key: string;
-  isActive: boolean;
-  onClick: (id: string) => void;
+  sources: Array<string>;
+  url: string;
 }
 
-function ProjectsPanel() {
-  const [activeId, setActiveId] = useState<string | null>(null);
+type Props = {
+  data: Project[];
+};
 
-  const handleChangeActive = (id: string) => {
-    setActiveId((prev) => (prev == id ? null : id));
+function ProjectsPanel({ data }: Props) {
+  const defaultProj = {
+    title: "Default Project Title",
+    description: "Default Project Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  };
+
+  const [activeProj, setActiveProj] = useState<Project>(defaultProj);
+
+  const handleChangeProj = (index: number) => {
+    setActiveProj((prev) =>
+      prev === data[index] ? (prev = defaultProj) : (prev = data[index])
+    );
+    console.log(activeProj);
   };
 
   return (
     <div className="ProjectsPanel">
       <div className="ProjectsMainContainer">
         <h2>Featured Projects</h2>
-        <p>
-          {"<"}Click to display{">"}
-        </p>
-        <div className="ProjectsSelector"></div>
-      </div>
-
-      <div className="ProjectsDisplay">
-        <img className="ProjectsImages" src="/SkillsImages/rp2040.jpg"></img>
-        <div className="ProjectsDesc">
-          <h2>Project Title {"->]"}</h2>
-          <p>Project Description</p>
+        <p>{"<Click to display>"}</p>
+        <div className="ProjectsSelector">
+          {data.map((project, i) => (
+            <ProjectCard
+              title={project.title}
+              index={i}
+              key={`Project_no_${i}`}
+              isActive={activeProj === data[i]}
+              onClick={handleChangeProj}
+            ></ProjectCard>
+          ))}
         </div>
       </div>
 
-      {/* { {data.map((card, index) => (
-          <Card
-            source={card.source}
-            title={card.title}
-            description={card.description}
-            longDesc={card.longDesc}
-            id={`Skill_no_${index}`}
-            key={`Skill_no_${index}`}
-            isActive={activeCardId === `Skill_no_${index}`}
-            onClick={handleChangeActive}
-          />
-        ))} } */}
+      <div className="ProjectsDisplay">
+        <ImageSlider sources={activeProj.sources}></ImageSlider>
+        <div className="ProjectsDesc">
+          <a href={activeProj.url} target="_blank">
+            <h2>{`${activeProj.title}`}</h2>
+          </a>
+          <p>{activeProj.description}</p>
+        </div>
+      </div>
     </div>
   );
 }

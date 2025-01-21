@@ -1,36 +1,80 @@
 import "./App.css";
 import ProjectsPanel from "./projects/ProjectsPanel";
 import Skills_Panel from "./skills/SkillsPanel";
-import ImageSlider from "./projects/ImageSlider";
+
+const skills = [
+  {
+    source: "/SkillsImages/rp2040.jpg",
+    title: "Microcontroller Programming",
+    description: "Experience in programming multiple MCU",
+    longDesc:
+      "Experienced in programming microcontrollers belonging to the families: \
+      \n \
+      \nArduino - via Arduino IDE\
+      \nESP32 - via Arduino IDE\
+      \nRPI Pico - via Micropython and CircuitPython\
+      \nPIC16 family - via MPLAB IDE",
+  },
+  {
+    source: "/SkillsImages/web.jpg",
+    title: "Web Development",
+    description: "Experience in Web Development",
+    longDesc:
+      "Experienced in Web Development using different frameworks as well as integration of APIs: \
+    \n\
+    \nHTML\
+    \nCSS\
+    \nJavascript\
+    \nReact\
+    \nTypescript\
+    \nFirebase API",
+  },
+  {
+    source: "/image.png",
+    title: "Skill Name 3",
+    description: "Short Description 3",
+    longDesc: "Skill Long Description 3",
+  },
+];
+
+const projects = [
+  {
+    title: "Project1",
+    description: "Project1 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project2",
+    description: "Project2 Description",
+    sources: [
+      "/SkillsImages/rp2040.jpg",
+      "/SkillsImages/web.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+];
 
 function App() {
-  const skills = [
-    {
-      source: "/SkillsImages/rp2040.jpg",
-      title: "Microcontroller Programming",
-      description: "I have experience in multiple MCUs",
-      longDesc:
-        "Experienced in programming microcontrollers belonging to the Arduino, ESP32, RPI Pico, PIC16 family. \nThese are mostly done using the Arduino IDE, Micropython, Circuipython, and MPLAB IDE environments.",
-    },
-    {
-      source: "/SkillsImages/web.jpg",
-      title: "Web Development",
-      description: "Short Description 2",
-      longDesc: "Skill Long Description 2",
-    },
-    {
-      source: "/image.png",
-      title: "Skill Name 3",
-      description: "Short Description 3",
-      longDesc: "Skill Long Description 3",
-    },
-  ];
-
   return (
     <>
-      {/* <Skills_Panel data={skills}></Skills_Panel> */}
-      {/* <ProjectsPanel></ProjectsPanel> */}
-      <ImageSlider sources={["arr1", "arr2", "arr3"]}></ImageSlider>
+      <Skills_Panel data={skills}></Skills_Panel>
+      <ProjectsPanel data={projects}></ProjectsPanel>
     </>
   );
 }

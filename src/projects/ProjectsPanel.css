@@ -7,6 +7,7 @@
 
 .ProjectsPanel > * {
     background-color: hsl(15, 3%, 25%);
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .ProjectsMainContainer{
@@ -15,6 +16,50 @@
     padding: 2rem;
     margin: 2rem 1rem 2rem 0;
     border-radius: 0 1rem 1rem 0;
+    color: antiquewhite;
+}
+
+.ProjectsMainContainer:hover {
+    width: 25%;
+    font-size: 2rem;
+    overflow-y: scroll;
+    border-radius: 0 3rem 3rem 0;
+}
+
+.ProjectsMainContainer > p{
+    font-size: 0.7rem;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ProjectsMainContainer:hover > p{
+    font-size: 1.5rem;
+}
+
+.ProjectsMainContainer:hover + .ProjectsDisplay {
+    width: 75%;
+}
+
+.ProjectsSelector > .ProjectCard{
+    margin: .5rem;
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(15, 2%, 30%);
+    inline-size: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    align-items: center;
+    color: white;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ProjectsMainContainer:hover > .ProjectsSelector > .ProjectCard {
+    height: 5rem;
+    font-size: 2.5rem;
+}
+
+.ProjectsSelector > .active{
+    background-color: hsl(231, 60%, 34%);
 }
 
 .ProjectsDisplay{
@@ -24,21 +69,60 @@
     border-radius: 1rem 0 0 1rem;
 }
 
-.ProjectsImages{
-    height: 60%;
-    border-radius: 1rem 0 0 0;
-}
-
 .ProjectsDesc{
     height: 40%;
     padding: 2rem;
     border-radius: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.ProjectsMainContainer:hover {
-    width: 25%;
+.ProjectsDesc > *{
+    color: antiquewhite;
 }
 
-.ProjectsMainContainer:hover + .ProjectsDisplay {
-    width: 75%;
+.ImageSlider{
+    width: 100%;
+    height: 60%;
+    border-radius: 1rem 0 0 0;
+    position: relative;
+}
+
+.ImageSlider > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.ImageSlider > div{
+    font-size: 8rem;
+    color: white;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 2%;
+    background-color: black;
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ImageSlider > .BackButton{
+    left: 0%;
+    border-radius: 1rem 0 0 0;
+}
+
+.ImageSlider > .NextButton{
+    right: 0%;
+}
+
+.ImageSlider > div:hover{
+    background-color: black;
+    opacity: 60%;
 }
