@@ -22,7 +22,7 @@ function Card({
 }: Props) {
   return (
     <div
-      className={`Card ${isActive ? "active" : "inactive"}`}
+      className={`Card Clickable ${isActive ? "active" : "inactive"}`}
       onClick={() => onClick(id)}
     >
       <img src={source} alt="image" />

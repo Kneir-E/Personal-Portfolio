@@ -16,7 +16,7 @@ function ProjectCard({
 }: Props) {
   return (
     <div
-      className={`ProjectCard ${isActive ? "active" : "inactive"}`}
+      className={`ProjectCard Clickable ${isActive ? "active" : "inactive"}`}
       onClick={() => onClick(index)}
     >
       {title}

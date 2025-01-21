@@ -1,19 +1,25 @@
 .SkillsPanel{
-    height: calc(100vh - 3.8rem);
+    height: 100vh;
     width: 100%;
-    margin: 2rem 0 0 0;
-    padding: 0px;
-    color: wheat;
+    padding: 2rem 0 2rem 0 ;
     box-sizing: border-box;
 }
 
-.SkillsPanel > h2{
-    margin: 0rem 2rem 1rem 2rem;
+.SkillsPanelTitle{
+    width: 60%;
+    padding: 1rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+    color: var(--text-1);
+    background-color: var(--main-2);
+}
+
+.SkillsPanelTitle > h2{
+    margin: 0;
     font-size: 3rem;
 }
 
-.SkillsPanel > p{
-    margin: 0rem 2rem 1rem 2rem;
+.SkillsPanelTitle > p{
+    margin: 0;
     font-size: 1.4rem;
 }
 
@@ -21,38 +27,38 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    padding: 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     overflow-x: scroll;
-    margin: 0rem 1rem 0rem 1rem;
     height: calc(100% - 8.8rem);
 }
 
 .Card{
-    background-color: hsl(15, 3%, 25%);
-    color: hsl(20, 5.70%, 89.60%);
-    min-width: 30%;
-    max-width: 30%;
-    height: 70%;
-    border: hsl(60, 1%, 19%);
-    border-style: solid;
-    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: var(--main-2);
+    color: var(--text-1);
+    min-width: 25rem;
+    max-width: 25rem;
+    height: 80%;
+    border-radius: 1rem;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 500ms;
 }
 
 .SkillsContainer > .inactive:hover{
     transform: translate(0px, -2rem);
-    background-color: hsl(12, 3%, 34%);
+    background-color: var(--mid);
     display: block;
+    box-shadow: 1rem 1rem hsl(37, 19%, 24%);
 }
 
 .SkillsContainer > .active{
-    background-color: hsl(231, 60%, 34%);
+    background-color: var(--accent-1);
+    color: var(--main-2);
     min-width: 60%;
     max-width: 60%;
-    border-radius: 1rem 0rem 0rem 1rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
+    box-shadow: 1rem 1rem hsl(37, 19%, 24%);
 }
 
 .inactive > img{
@@ -79,7 +85,7 @@
 }
 
 .Card > .DescContainer > h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .Card > .DescContainer > p{

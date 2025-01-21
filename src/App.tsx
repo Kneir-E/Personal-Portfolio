@@ -6,7 +6,7 @@ const skills = [
   {
     source: "/SkillsImages/rp2040.jpg",
     title: "Microcontroller Programming",
-    description: "Experience in programming multiple MCU",
+    description: "Experience in programming MCUs",
     longDesc:
       "Experienced in programming microcontrollers belonging to the families: \
       \n \
@@ -20,7 +20,7 @@ const skills = [
     title: "Web Development",
     description: "Experience in Web Development",
     longDesc:
-      "Experienced in Web Development using different frameworks as well as integration of APIs: \
+      "Experienced in Web Development using different frameworks as well as integration of APIs. Some of the frequently used ones are: \
     \n\
     \nHTML\
     \nCSS\
@@ -30,10 +30,17 @@ const skills = [
     \nFirebase API",
   },
   {
-    source: "/image.png",
-    title: "Skill Name 3",
-    description: "Short Description 3",
-    longDesc: "Skill Long Description 3",
+    source: "/SkillsImages/web.jpg",
+    title: "Application Development",
+    description: "Multiple languages of app development",
+    longDesc:
+      "Experience in creating applications for both desktop and mobile platforms as well as usage of repositories like Git.\
+    \n\
+    \nPreferred Languages:\
+    \nC/C++\
+    \nJava\
+    \nPython\
+    \nKotlin",
   },
 ];
 
@@ -54,6 +61,66 @@ const projects = [
     sources: [
       "/SkillsImages/rp2040.jpg",
       "/SkillsImages/web.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
+      "/ProjectsImages/img3.jpg",
+    ],
+    url: "https://www.google.com",
+  },
+  {
+    title: "Project3",
+    description: "Project3 Description",
+    sources: [
+      "/ProjectsImages/img1.jpg",
+      "/ProjectsImages/img2.jpg",
       "/ProjectsImages/img3.jpg",
     ],
     url: "https://www.google.com",

@@ -22,12 +22,14 @@ function Skills_Panel({ data }: Props) {
 
   return (
     <div className="SkillsPanel">
-      <h2>What I do</h2>
-      <p>{"<Click each to expand>"}</p>
-      <p>
-        I have computer engineering related skills in both software and hardware
-        development.
-      </p>
+      <div className="SkillsPanelTitle">
+        <h2>What I do</h2>
+        <p>{"<Click each to expand>"}</p>
+        <p>
+          I have computer engineering related skills in both software and
+          hardware development.
+        </p>
+      </div>
       <div className="SkillsContainer">
         {data.map((card, index) => (
           <Card

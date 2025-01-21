@@ -25,12 +25,12 @@ function ImageSlider(props: Props) {
 
   return (
     <div className="ImageSlider">
-      <div className="BackButton" onClick={handleBack}>
+      <div className="BackButton Clickable" onClick={handleBack}>
         <p>{"<"}</p>
       </div>
 
       <img src={props.sources[currImg]} alt="image.jpg" />
-      <div className="NextButton" onClick={handleNext}>
+      <div className="NextButton Clickable  " onClick={handleNext}>
         <p>{">"}</p>
       </div>
     </div>
