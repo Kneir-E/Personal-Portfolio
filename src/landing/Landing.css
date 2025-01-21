@@ -1,0 +1,55 @@
+.LandingPage{
+    /* background-color: var(--main-1); */
+    background-image: 
+    linear-gradient(rgba(3,14,25, 0), rgba(3,14,25, .25), rgba(3,14,25,1)), 
+    url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Dark-Wallpapers-HD.png);
+    /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Dark-Wallpapers-HD.png); */
+    height: 100vh;
+    width: 100%;
+}
+
+.LandingPage > * {
+    color: var(--text-1);
+    margin: 0;
+    position:absolute;
+}
+
+.LandingPage > .welcome {
+    font-size: 12rem;
+    left: 10%;
+    top: 20%;
+}
+
+.LandingPage > .self-image-container > .self-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.LandingPage > .paragraph {
+    font-size: 2rem;
+    width: 40%;
+    left: 10%;
+    top: 50%;
+}
+
+.LandingPage > .self-image-container {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    right: 11.5%;
+    top: 25%;
+}
+
+.LandingPage > .name {
+    font-size: 5rem;
+    right: 10%;
+    top: 60%;
+}
+
+.LandingPage > .subtitle {
+    font-size: 1.45rem;
+    right: 10%;
+    top: 70%;
+}

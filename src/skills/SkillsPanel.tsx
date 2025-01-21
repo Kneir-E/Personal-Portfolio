@@ -13,7 +13,7 @@ type Props = {
   data: CardData[]; // Array of objects
 };
 
-function Skills_Panel({ data }: Props) {
+function SkillsPanel({ data }: Props) {
   const [activeCardId, setActiveCardId] = useState<string | null>(null);
 
   const handleChangeActive = (id: string) => {
@@ -21,14 +21,15 @@ function Skills_Panel({ data }: Props) {
   };
 
   return (
-    <div className="SkillsPanel">
+    <div className="SkillsPanel" id="About">
       <div className="SkillsPanelTitle">
-        <h2>What I do</h2>
-        <p>{"<Click each to expand>"}</p>
+        <h2>About Me</h2>
         <p>
-          I have computer engineering related skills in both software and
-          hardware development.
+          I am a hard working computer engineering student that loves to tinker
+          with both software and hardware. Some of my related skills and
+          experiences involve:
         </p>
+        <p>{"<Click each to expand>"}</p>
       </div>
       <div className="SkillsContainer">
         {data.map((card, index) => (
@@ -48,4 +49,4 @@ function Skills_Panel({ data }: Props) {
   );
 }
 
-export default Skills_Panel;
+export default SkillsPanel;

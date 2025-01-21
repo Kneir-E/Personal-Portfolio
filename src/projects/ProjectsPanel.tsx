@@ -37,7 +37,7 @@ function ProjectsPanel({ data }: Props) {
   };
 
   return (
-    <div className="ProjectsPanel">
+    <div className="ProjectsPanel" id="Projects">
       <div className="ProjectsMainContainer">
         <h2>Featured Projects</h2>
         <p>{"<Click to display>"}</p>

@@ -1,6 +1,7 @@
 import "./App.css";
 import ProjectsPanel from "./projects/ProjectsPanel";
 import Skills_Panel from "./skills/SkillsPanel";
+import LandingPanel from "./landing/Landing";
 
 const skills = [
   {
@@ -140,6 +141,7 @@ const projects = [
 function App() {
   return (
     <>
+      <LandingPanel></LandingPanel>
       <Skills_Panel data={skills}></Skills_Panel>
       <ProjectsPanel data={projects}></ProjectsPanel>
     </>

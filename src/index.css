@@ -6,11 +6,12 @@
     --text-1: hsl(23, 69%, 80%);
     --mid: hsl(348, 32%, 30%); */
 
-    --main-1: #282828;
-    --main-2: #3c332b;
-    --accent-1: #d38231;
-    --text-1: white;
-    --mid: #68605a;
+    --main-1: rgb(3,14,25);
+    --main-2: rgb(5,27,41);
+    --accent-1: rgba(5,43,58);
+    --text-1: rgb(255, 255, 255);
+    --mid: rgb(41, 88, 107);
+    --shadow: rgb(85, 158, 187);
 
     /* CSS HSL */
     --sea-green: hsl(146, 29%, 45%);
@@ -70,13 +71,46 @@ border-radius: 4px; /* Rounded corners */
 }
 
 @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.oswald-thin{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.oswald-normal{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-bold{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bebas-regular {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bebas-bold {
+  font-family: "Bebas Neue", serif;
+  font-weight: 700;
+  font-style: normal;
+}

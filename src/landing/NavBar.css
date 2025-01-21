@@ -1,0 +1,49 @@
+.NavBar{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    padding: 0 6rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Scrolled{
+    background-color: var(--main-2);
+    transform: translateY(-2rem);
+    opacity: 0%;
+}
+
+.Scrolled:hover{
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.NavBar > .NavTitle{
+    color: var(--text-1);
+    font-size: 1.5rem;
+}
+
+.NavBar > .NavButtons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.NavBar > .NavButtons > a:link, a:visited, a:active {
+    height: 100%;
+    color: var(--text-1);
+    text-decoration: none;
+    text-align: center;
+    padding: 1.4rem 1rem;
+    font-size: 1.2rem;
+}
+
+.NavBar > a:hover{
+    background-color: var(--accent-1);
+    color: white;
+}

@@ -19,7 +19,7 @@
     border-radius: 0 1rem 1rem 0;
     overflow-y: hidden;
     color: var(--text-1);
-    box-shadow: .2rem .2rem .5rem 0rem hsl(60, 9%, 11%);
+    box-shadow: .2rem .2rem .2rem 0rem var(--shadow);
 }
 
 .ProjectsMainContainer:hover {
@@ -63,7 +63,7 @@
 
 .ProjectsSelector > .ProjectCard:hover{
     transform: translateX(.5rem);
-    box-shadow: -.5rem .5rem hsl(37, 19%, 24%);
+    box-shadow: -.5rem .5rem var(--shadow);
 }
 
 .ProjectsMainContainer:hover > .ProjectsSelector > .ProjectCard {
@@ -74,7 +74,7 @@
 .ProjectsSelector > .active{
     background-color: var(--accent-1);
     transform: translateX(.5rem);
-    box-shadow: -.5rem .5rem hsl(37, 19%, 24%);
+    box-shadow: -.5rem .5rem var(--shadow);
 }
 
 .ProjectsDisplay{
@@ -82,7 +82,7 @@
     height: 100%;
     margin: 0rem 0 0rem 1rem;
     border-radius: 1rem 0 0 1rem;
-    box-shadow: -.2rem .2rem .5rem 0rem hsl(60, 9%, 11%);
+    box-shadow: -.2rem .2rem .5rem 0rem var(--shadow);
 }
 
 .ProjectsDesc{
@@ -115,7 +115,7 @@
 
 .ImageSlider > div{
     font-size: 8rem;
-    color: white;
+    color: var(--text-1);
     position: absolute;
     top: 0;
     z-index: 2;

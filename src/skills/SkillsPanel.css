@@ -11,6 +11,7 @@
     border-radius: 0 2rem 2rem 0;
     color: var(--text-1);
     background-color: var(--main-2);
+    box-shadow: .2rem .2rem 0.2rem 0rem var(--shadow);
 }
 
 .SkillsPanelTitle > h2{
@@ -47,18 +48,18 @@
     transform: translate(0px, -2rem);
     background-color: var(--mid);
     display: block;
-    box-shadow: 1rem 1rem hsl(37, 19%, 24%);
+    box-shadow: 1rem 1rem var(--shadow);
 }
 
 .SkillsContainer > .active{
     background-color: var(--accent-1);
-    color: var(--main-2);
+    color: var(--text-1);
     min-width: 60%;
     max-width: 60%;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
-    box-shadow: 1rem 1rem hsl(37, 19%, 24%);
+    box-shadow: 1rem 1rem var(--shadow);
 }
 
 .inactive > img{
