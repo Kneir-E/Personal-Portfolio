@@ -21,7 +21,14 @@ function ImageSlider(props: Props) {
     return () => {
       clearInterval(intervalID);
     };
-  }, [props.sources.length]);
+  }, [props.sources]);
+
+  useEffect(() => {
+    // If the current index is out of bounds after the sources array changes, reset to 0
+    if (currImg >= props.sources.length) {
+      setCurrImg(0);
+    }
+  }, [props.sources, currImg]);
 
   return (
     <div className="ImageSlider">

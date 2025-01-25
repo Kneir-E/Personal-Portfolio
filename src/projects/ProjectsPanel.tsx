@@ -17,14 +17,17 @@ type Props = {
 
 function ProjectsPanel({ data }: Props) {
   const defaultProj = {
-    title: "Default Project Title",
-    description: "Default Project Description",
+    title: "Highlight Projects",
+    description:
+      'A short summary of my old projects.\
+    \n Click on the "Highlight Projects" to go to my github.\
+    \n Click on the list to display a project',
     sources: [
-      "/ProjectsImages/img1.jpg",
-      "/ProjectsImages/img2.jpg",
-      "/ProjectsImages/img3.jpg",
+      "/content/03_hotel/01.png",
+      "/content/05_java/01.png",
+      "/content/06_python/01.png",
     ],
-    url: "https://www.google.com",
+    url: "https://github.com/Kneir-E",
   };
 
   const [activeProj, setActiveProj] = useState<Project>(defaultProj);
