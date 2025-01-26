@@ -2,22 +2,11 @@ import "./App.css";
 import ProjectsPanel from "./projects/ProjectsPanel";
 import Skills_Panel from "./skills/SkillsPanel";
 import LandingPanel from "./landing/Landing";
+import Contact from "./contacts/Contact";
 
 const skills = [
   {
-    source: "/SkillsImages/rp2040.jpg",
-    title: "Microcontroller Programming",
-    description: "Experience in programming MCUs",
-    longDesc:
-      "Experienced in programming microcontrollers belonging to the families: \
-      \n \
-      \nArduino - via Arduino IDE\
-      \nESP32 - via Arduino IDE\
-      \nRPI Pico - via Micropython and CircuitPython\
-      \nPIC16 family - via MPLAB IDE",
-  },
-  {
-    source: "/SkillsImages/web.jpg",
+    source: "/content/03_hotel/04.png",
     title: "Web Development",
     description: "Experience in Web Development",
     longDesc:
@@ -29,6 +18,18 @@ const skills = [
     \nReact\
     \nTypescript\
     \nFirebase API",
+  },
+  {
+    source: "/SkillsImages/rp2040.jpg",
+    title: "Microcontroller Programming",
+    description: "Experience in programming MCUs",
+    longDesc:
+      "Experienced in programming microcontrollers belonging to the families: \
+      \n \
+      \nArduino - via Arduino IDE\
+      \nESP32 - via Arduino IDE\
+      \nRPI Pico - via Micropython and CircuitPython\
+      \nPIC16 family - via MPLAB IDE",
   },
   {
     source: "/SkillsImages/web.jpg",
@@ -112,6 +113,7 @@ function App() {
       <LandingPanel></LandingPanel>
       <Skills_Panel data={skills}></Skills_Panel>
       <ProjectsPanel data={projects}></ProjectsPanel>
+      <Contact></Contact>
     </>
   );
 }

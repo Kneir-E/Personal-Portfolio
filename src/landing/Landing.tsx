@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 
 function LandingPanel() {
   return (
-    <div className="LandingPage" id="home">
+    <div className="LandingPage" id="Home">
       <NavBar></NavBar>
       <p className="welcome bebas-bold">Hi there!</p>
       <div className="self-image-container">
